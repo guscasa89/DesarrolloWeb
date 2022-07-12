@@ -156,6 +156,7 @@ main {
   border-radius: 25px;
   border: none;
   box-shadow: 2px 2px 5px #73412f;
+
 }
 .search {
   float: center;
@@ -175,6 +176,17 @@ main {
   cursor: pointer;
   margin-left: 5px;
   text-shadow: 2px 2px 5px #73412f;
+  -webkit-transition: 1s linear;
+  transition: 0.5s linear;
+}
+
+
+.search button:hover{
+  -webkit-transform: scale(.5);
+  transform: scale(1);
+  border-radius: 70px;
+  box-shadow: #c3d900;
+  width: 10%;
 }
 
 /* video */
