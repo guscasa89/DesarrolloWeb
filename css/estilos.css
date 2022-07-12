@@ -78,6 +78,7 @@ nav ul li {
   font-size: 18px;
   font-family: "Quicksand", sans-serif;
 }
+
 nav ul li a {
   color: #f2f2f2;
   font-weight: bold;
@@ -261,7 +262,84 @@ main {
   right: 50px;
   padding-left: 5px;
   padding-right: 5px;
+
+  animation-name: rebotar;
+  animation-duration: 10s;
+  background-position: center;
+  background-size: cover;
+
 }
+
+@keyframes rebotar{
+  0%{
+      opacity: 0;
+  }
+  1%{
+      transform: translateX(150px);
+      box-shadow: 0px 10px 10px 10px #0d0d0d;
+  }
+  
+  10%{
+      opacity: 1;
+      transform: translateX(150px);
+  }
+  11%{
+      box-shadow: 0px 10px 10px 10px #0d0d0d;
+  }
+  20%{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+  21%{
+      box-shadow: none;
+  }
+  30%{
+      opacity: 1;
+      transform: translateY(150px);
+  }
+  31%{
+      box-shadow: 0px 10px 10px 10px #0d0d0d;
+  }
+  40%{
+      opacity: 1;
+      transform: translateY(0px);
+      box-shadow: none;
+  }
+  50%{
+      opacity: 1;
+      transform: translateX(-150px);
+      box-shadow: 0px 10px 10px 10px #0d0d0d;
+  }
+  60%{
+      opacity: 1;
+      transform: translateX(0px);
+      box-shadow: none;
+  }
+  70%{
+      opacity: 1;
+      transform: translateY(-150px);
+      box-shadow: 0px 10px 10px 10px #0d0d0d;
+  }
+  80%{
+      opacity: 1;
+      transform: translateY(-50px);
+      box-shadow: none;
+  }
+  90%{
+      opacity: 1;
+      transform: translateY(-130px);
+      box-shadow: none;
+      transform: rotate(-280deg);
+  }
+  
+  100%{
+      transform: rotate(-560deg);
+      transform: translate(10px, 150px);
+      box-shadow: 0px 10px 10px 10px #0d0d0d;
+  }
+}
+
+
 
 .clearfix:after {
   content: "";
@@ -382,9 +460,8 @@ footer i:hover {
   resize: none;
   display: block;
 }
-.formularios form p{
+.formularios form p {
   align-self: center;
-  
 }
 .formularios form p input[type="submit"] {
   background-color: #f29a2e;
@@ -399,17 +476,17 @@ footer i:hover {
   transform: scale(0.97);
   box-shadow: 7px 5px 56px -10px #f29a2e;
 }
-#retiro{
+#retiro {
   margin: 10px;
 }
-#envio{
+#envio {
   margin: 10px;
 }
 .items {
   margin-top: 10px;
   list-style-type: none;
 }
-.bloque{
+.bloque {
   display: block;
 }
 
@@ -537,10 +614,6 @@ footer i:hover {
   color: white;
 }
 
-
-
-
-
 @media only screen and (max-width: 319px) {
   .container-grid {
     display: grid;
@@ -558,12 +631,12 @@ footer i:hover {
   .box3 #inicio p {
     font-size: 12px;
   }
-  
+
   header {
     display: inline-flex;
     justify-content: space-around;
   }
-  
+
   nav ul li {
     display: inline-block;
     font-size: 14px;
@@ -576,25 +649,23 @@ footer i:hover {
     width: 160px;
     height: 90px;
   }
-  
 
-  .btn:link, .btn:visited{
+  .btn:link,
+  .btn:visited {
     margin: 30px;
   }
-  .head_button_4{
+  .head_button_4 {
     padding: 10px;
   }
 
-  .formularios{
+  .formularios {
     width: 100%;
     height: auto;
   }
   .formularios form {
-    
     font-size: 12px;
   }
-  .formularios form h1
-  {
+  .formularios form h1 {
     font-size: 14px;
   }
   .formularios form .precio {
@@ -605,12 +676,12 @@ footer i:hover {
   .formularios form p {
     font-size: 12px;
   }
- 
+
   .formularios form input[type="submit"] {
     margin-top: 6px;
     margin: 0px;
   }
-  .nosotros{
+  .nosotros {
     height: auto;
     font-size: 12px;
     display: grid;
@@ -619,7 +690,7 @@ footer i:hover {
     align-items: center;
   }
 
-  .nleftuno{
+  .nleftuno {
     height: 200px;
     width: 80%;
     margin-top: 20px;
@@ -635,7 +706,7 @@ footer i:hover {
     min-height: none;
     padding-left: 0px;
   }
-  .nrightdos{
+  .nrightdos {
     height: 200px;
     width: 80%;
     margin-bottom: 20px;
@@ -643,7 +714,8 @@ footer i:hover {
     margin-top: 0px;
   }
 
-  .btn:link, .btn:visited {
+  .btn:link,
+  .btn:visited {
     margin: 10px;
   }
   .head_button_4 {
@@ -661,7 +733,6 @@ footer i:hover {
     width: 60px;
     position: sticky;
   }
-  
 }
 
 @media only screen and (min-width: 320px) and (max-width: 799px) {
@@ -682,7 +753,7 @@ footer i:hover {
     display: inline-flex;
     justify-content: space-around;
   }
-  
+
   nav ul li {
     display: inline-block;
     font-size: 14px;
@@ -701,21 +772,22 @@ footer i:hover {
     right: 20px;
   }
   .menu {
-  grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .btn:link, .btn:visited{
+  .btn:link,
+  .btn:visited {
     margin: 15px;
   }
-  .head_button_4{
+  .head_button_4 {
     padding: 10px;
   }
 
-  .formularios{
+  .formularios {
     width: 80%;
     height: auto;
   }
-  .nosotros{
+  .nosotros {
     height: auto;
     font-size: 12px;
     display: grid;
@@ -724,7 +796,7 @@ footer i:hover {
     align-items: center;
   }
 
-  .nleftuno{
+  .nleftuno {
     height: 200px;
     width: 80%;
     margin-top: 20px;
@@ -740,16 +812,13 @@ footer i:hover {
     min-height: none;
     padding-left: 0px;
   }
-  .nrightdos{
+  .nrightdos {
     height: 200px;
     width: 80%;
     margin-bottom: 20px;
     margin-left: 0px;
     margin-top: 0px;
   }
-  
-
-  
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1023px) {
@@ -778,10 +847,10 @@ footer i:hover {
     width: 70%;
   }
 
-  #video{
+  #video {
     height: 80vh;
   }
-  .head_button_4{
+  .head_button_4 {
     padding: 10px;
   }
 
@@ -800,12 +869,11 @@ footer i:hover {
     width: 100%;
   }
 
-  .formularios form p{
+  .formularios form p {
     align-self: center;
-
   }
-  
-  .nosotros{
+
+  .nosotros {
     height: auto;
     font-size: 12px;
     display: grid;
@@ -815,7 +883,7 @@ footer i:hover {
     justify-content: stretch;
   }
 
-  .nleftuno{
+  .nleftuno {
     height: 200px;
     width: 80%;
     margin-top: 20px;
@@ -829,23 +897,20 @@ footer i:hover {
   .nrightuno p {
     margin-bottom: 0px;
   }
-  
 
   .nleftdos {
     width: 80%;
     min-height: none;
     padding-left: 0px;
   }
-  .nrightdos{
+  .nrightdos {
     height: 200px;
     width: 80%;
     margin-bottom: 20px;
     margin-left: 0px;
     margin-top: 0px;
   }
-
 }
-
 
 @media only screen and (min-width: 1024px) and (max-width: 1560px) {
   .nleftuno {
@@ -862,7 +927,7 @@ footer i:hover {
   .nrightdos {
     height: 250px;
   }
-  .nosotros{
+  .nosotros {
     height: 800px;
     font-size: 12px;
   }
@@ -870,13 +935,13 @@ footer i:hover {
   .formularios {
     height: 830px;
     margin: 30px;
-
   }
   .formularios form input[type="submit"] {
     width: 100%;
   }
 
-  .formularios form input[type="text"], .formularios form input[type="email"] {
+  .formularios form input[type="text"],
+  .formularios form input[type="email"] {
     width: 100%;
   }
 
@@ -891,11 +956,9 @@ footer i:hover {
   .formularios form p {
     align-self: center;
   }
-
 }
 
-@media only screen and  (max-width: 600px) {
-
+@media only screen and (max-width: 600px) {
   .menu {
     grid-template-columns: 1fr;
   }
@@ -904,7 +967,4 @@ footer i:hover {
     height: 200px;
     width: 200px;
   }
-
 }
-
-
