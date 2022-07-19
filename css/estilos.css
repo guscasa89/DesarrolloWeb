@@ -35,9 +35,9 @@
   flex-direction: column;
   justify-content: space-around;
 }
-.box3 {
-  grid-area: box3;
-  /*border-style: dashed;*/
+/* .box3 {
+  grid-area: box3;*/
+  /*border-style: dashed;*//*
   height: auto;
   width: 100%;
   background-image: url(/assets/images/principal.jpg);
@@ -46,6 +46,17 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
+} */
+.box3 {
+  grid-area: box3;
+  height: 100%;
+  width: 100%;
+  background-image: url(/assets/images/principal.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
 }
 .box4 {
   grid-area: box4;
@@ -544,7 +555,7 @@ footer i:hover {
   text-align: justify;
 }
 .nrightdos {
-  background-image: url(..assets/images/sec2.jpeg);
+  background-image: url(../assets/images/sec2.jpeg);
   background-size: cover;
   background-position: center;
   width: 50%;
