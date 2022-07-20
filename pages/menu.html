@@ -5,92 +5,129 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/estilos.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@500&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/estilos.css" />
   <title>Menu</title>
 </head>
 
 <body>
  
-  <div class="container-grid">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img id="logo" src="../assets/images/logo2.png" alt=""></a>
 
-    <div class="box1">
-      <header>
-        <img id="logo" src="../assets/images/logo2.png" alt="Logo" />
-        <nav>
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="pedidos.html">Pedidos</a></li>
-            <li><a href="nosotros.html">Sobre mi</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-
-
-    
-    <div class="box2">
-
-      <div class="search">
-        <form action="#">
-          <input type="text" placeholder=" Busca en la pagina" name="search" />
-          <button>
-            <i class="fa fa-search" style="font-size: 18px"> </i>
-          </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html">Inicio
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pedidos.html">Pedidos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Sobre mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
+    </div>
+  </nav>
 
-      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/U0dW24WEgvE"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Nuestra cocina en video</h5>
+            <h6 class="card-subtitle text-muted">Especiales Gourmet</h6>
+          </div>
+          <iframe id="video" src="https://www.youtube.com/embed/U0dW24WEgvE" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#" class="btn head_button_4">Menúes congelados</a></li>
+            <li class="list-group-item"><a href="#" class="btn head_button_4">Tartas</a></li>
+            <li class="list-group-item"><a href="#" class="btn head_button_4">Sopas</a></li>
+            <li class="list-group-item"><a href="#" class="btn head_button_4">Sandwiches</a></li>
+          </ul>
 
 
-      <a href="#" class="btn head_button_4">Menúes congelados</a>
-      <a href="#" class="btn head_button_4">Tartas</a>
-      <a href="#" class="btn head_button_4">Sopas</a>
-      <a href="#" class="btn head_button_4">SandWiches</a>
- 
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+        <div class="box3">
+          <section class="menu">
+            <!-- .item.item$*8 -->
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+            <div class="item item4"></div>
+          </section>
+        </div>
+      </div>
+
     </div>
 
-    <div class="box3">
-      <section class="menu">
-        <!-- .item.item$*8 -->
-        <div class="item item1"></div>
-        <div class="item item2"></div>
-        <div class="item item3"></div>
-        <div class="item item4"></div>
-      </section>
+    <div class="row">
+      <div class="box4">
+        <footer>
+          <p>Copyright © 2022 Ramallo Cocina - Todos los derechos reservados</p>
+          <p>Desarrollado por: @guscasa89</p>
+          <div class="redes">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </footer>
+      </div>
     </div>
 
     <div>
       <img id="logoPublicidad" src="../assets/images/logo.png" alt="Logo" />
     </div>
 
-    
-
-
-    <div class="box4">
-      <footer>
-        <p>Copyright © 2022 Ramallo Cocina - Todos los derechos reservados</p>
-        <p>Desarrollado por: @guscasa89</p>
-        <div class="redes">
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-      </footer>
-    </div>
-
   </div>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+  </script>
 
 </body>
 

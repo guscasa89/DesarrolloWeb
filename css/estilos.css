@@ -1,7 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(
+    to bottom,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(92, 29, 29, 1) 43%,
+    rgba(242, 154, 46, 1) 100%
+  );
+}
+
+.bg-primary {
+  background-color: transparent !important;
+}
+
+.container{
+  width: 100%;
+  max-width: 100%;
+}
+
+.card{
+  background-color: transparent;
+  border: transparent;
+}
+.list-group-item{
+  background-color: transparent;
+  border: transparent;
+}
+
+
+.w-100{
+  border-radius: 40px;
 }
 
 .container-grid {
@@ -51,12 +85,13 @@
   grid-area: box3;
   height: 100%;
   width: 100%;
-  background-image: url(/assets/images/principal.jpg);
+  background-image: url(../assets/images/principal.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   margin: 0px;
+  border-radius: 40px;
 }
 .box4 {
   grid-area: box4;
@@ -72,30 +107,16 @@ header {
   display: block;
 }
 
-nav {
-  height: 30px;
-  text-align: center;
-  padding-bottom: 10px;
-}
 nav ul {
   list-style: none;
   /*display: inline-block;*/
 }
-nav ul li {
-  display: inline-block;
-  /*float: left;*/
-  width: 10%;
-  position: relative;
-  font-size: 18px;
-  font-family: "Quicksand", sans-serif;
-}
+
 
 nav ul li a {
   color: #f2f2f2;
   font-weight: bold;
   text-decoration: none;
-  padding-top: 20px;
-  padding-bottom: 10px;
 
   border-radius: 50px;
   border: none;
@@ -110,20 +131,15 @@ nav ul li a:active {
   transform: scale(0.97);
   box-shadow: 7px 5px 56px -10px #c3d900;
 }
-#logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
 
-  padding-left: 33px;
-  padding-right: 33px;
-  padding-bottom: 30px;
-  padding-top: 16px;
-  border-radius: 50px;
+#logo {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 140px;
+  height: 80px;
+  border-radius: 30px;
   /*background: #d5f365;*/
   border: none;
-  text-align: center;
   cursor: pointer;
   transition: 0.4s;
 }
@@ -235,6 +251,7 @@ main {
   animation-duration: 5s;
   color: #0d0d0d;
   text-align: center;
+  width: 100%;
 }
 .btn::after {
   content: "";
@@ -413,60 +430,28 @@ footer i:hover {
 
 /* Para pagina de pedidos y contacto */
 .formularios {
-  color: white;
   width: 60%;
   height: auto;
   background-color: rgba(0, 0, 0, 0.514);
-  font-family: "Quicksand", sans-serif;
+  margin: 20px;
+  border-radius: 20px;
   padding: 20px;
-  margin: 50px;
-  border-radius: 5px;
-  /*border: 3px solid white;*/
+  
 }
 .formularios form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Quicksand", sans-serif;
+  color: #f29a2e;
 }
-.formularios form p {
-  align-self: center;
-}
-.formularios form label {
-  width: 170px;
-  display: inline-block;
-  font-family: "Quicksand", sans-serif;
-}
-.formularios form .precio {
-  width: 72px;
-  margin-left: 30px;
-  display: inline-block;
-  color: #c3d900;
-  font-family: "Quicksand", sans-serif;
-}
+
+
 .formularios form input[type="text"],
-.formularios form input[type="email"] {
-  width: auto;
-  padding: 3px 10px;
-  border: 1px solid #f2f2f2;
-  border-radius: 3px;
-  background-color: #f2f2f2;
-  margin: 8px 0;
+.formularios form input[type="number"] {
+  width: 100%;
   display: inline-block;
-  font-family: "Quicksand", sans-serif;
 }
-.formularios form input[type="submit"] {
-  width: 70%;
-  padding: 8px 16px;
-  margin-top: 12px;
-  border: 1px solid #0d0d0d;
-  border-radius: 5px;
-  display: block;
-  color: #0d0d0d;
-  background-color: #f29a2e;
-  font-family: "Quicksand", sans-serif;
-  align-self: center;
-}
+
 .formularios form input[type="submit"]:hover {
   cursor: pointer;
 }
@@ -484,21 +469,11 @@ footer i:hover {
   display: block;
 }
 .formularios form p {
-  align-self: center;
+  text-align: right;
 }
-.formularios form p input[type="submit"] {
-  background-color: #f29a2e;
-  color: #0d0d0d;
-  width: 100%;
-}
-.formularios form p input[type="submit"]:hover {
-  cursor: pointer;
-  box-shadow: 7px 5px 56px -14px #f29a2e;
-}
-.formularios form p input[type="submit"]:active {
-  transform: scale(0.97);
-  box-shadow: 7px 5px 56px -10px #f29a2e;
-}
+
+
+
 #retiro {
   margin: 10px;
 }
