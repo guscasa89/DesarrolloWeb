@@ -91,7 +91,7 @@ body{
   display: flex;
   justify-content: center;
   margin: 0px;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 .box4 {
   grid-area: box4;
@@ -428,6 +428,8 @@ footer i:hover {
   margin-bottom: 30px;
 }
 
+
+
 /* Para pagina de pedidos y contacto */
 .formularios {
   width: 60%;
@@ -494,68 +496,24 @@ footer i:hover {
   width: 80%;
   height: 90%;
   background-color: rgba(0, 0, 0, 0.514);
-  font-family: "Quicksand", sans-serif;
   margin-top: 30px;
-  border-radius: 5px;
+  border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
 }
-.nleftuno {
-  background-image: url(../assets/images/sec1.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 40%;
-  margin-top: 40px;
-  margin-left: 20px;
-  height: 350px;
-  border: 2px solid #0d0d0d;
-  box-shadow: 2px 2px 5px #73412f;
-  border-radius: 5px;
+.nosotros p{
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
-.nrightuno {
-  width: 50%;
-  padding: 30px;
-  padding-top: 30px;
-  padding-right: 5px;
-  padding-bottom: 30px;
+.nosotros h5{
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
-.nrightuno h3 {
-  margin-bottom: 5px;
-  text-align: left;
-  font-family: "Quicksand", sans-serif;
+.img-fluid{
+  border-radius: 20px;
 }
-.nrightuno p {
-  margin-bottom: 30px;
-  font-family: "Quicksand", sans-serif;
-  text-align: justify;
+.centro{
+  align-self: center;
 }
-.nrightdos {
-  background-image: url(../assets/images/sec2.jpeg);
-  background-size: cover;
-  background-position: center;
-  width: 50%;
-  margin-top: 20px;
-  margin-left: 20px;
-  height: 300px;
-  border: 2px solid #0d0d0d;
-  box-shadow: 2px 2px 5px #73412f;
-  border-radius: 5px;
-}
-.nleftdos {
-  width: 40%;
-  min-height: 20px;
-  padding-left: 30px;
-}
-.nleftdos h3 {
-  margin-top: 10px;
-  text-align: left;
-  font-family: "Quicksand", sans-serif;
-}
-.nleftdos p {
-  margin-bottom: 30px;
-  font-family: "Quicksand", sans-serif;
-  text-align: justify;
-}
+
 
 /* Para pagina de Menu */
 .menu {
@@ -566,7 +524,7 @@ footer i:hover {
   font-family: "Quicksand", sans-serif;
   padding: 20px;
   margin: 50px;
-  border-radius: 5px;
+  border-radius: 20px;
 
   width: auto;
   height: auto;
@@ -754,8 +712,6 @@ footer i:hover {
 
   nav ul li {
     display: inline-block;
-    font-size: 14px;
-    font-family: "Quicksand", sans-serif;
     width: auto;
     margin: 10px;
     margin-top: 30px;
