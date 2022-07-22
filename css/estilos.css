@@ -38,51 +38,58 @@ body{
   border-radius: 40px;
 }
 
-.container-grid {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 200px 900px 150px;
-  grid-template-areas: "box1 box1" "box2 box3" "box4 box4";
 
-  background: linear-gradient(
-    to bottom,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(92, 29, 29, 1) 43%,
-    rgba(242, 154, 46, 1) 100%
-  );
-  height: auto;
-  min-height: 100vh;
-  width: 100%;
+/* Estructura Comun a Todas las paginas */
+
+/* Barra de navegacion */
+
+
+
+nav ul {
+  list-style: none;
+  /*display: inline-block;*/
 }
 
-.box1 {
-  grid-area: box1;
-  height: auto;
-  /*border-style: dashed;*/
+
+nav ul li a {
+  font-weight: bold;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
 }
-.box2 {
-  grid-area: box2;
-  /*border-style: dashed;*/
-  margin: 20px;
-  font-family: "Quicksand", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+nav ul li a:hover {
+  color: #f29a2e;
+  box-shadow: 7px 5px 56px -12px #f29a2e;
+  
+
 }
-/* .box3 {
-  grid-area: box3;*/
-  /*border-style: dashed;*//*
-  height: auto;
-  width: 100%;
-  background-image: url(/assets/images/principal.jpg);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-} */
+nav ul li a:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #f29a2e;
+
+
+}
+
+#logo {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 140px;
+  height: 80px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#logo:hover {
+  box-shadow: 7px 5px 56px -12px #f29a2e;
+}
+#logo:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #f29a2e;
+}
+
+/* Contenedor principal */
 .box3 {
-  grid-area: box3;
   height: 100%;
   width: 100%;
   background-image: url(../assets/images/principal.jpg);
@@ -94,126 +101,19 @@ body{
   border-radius: 20px;
 }
 .box4 {
-  grid-area: box4;
   height: auto;
-  /*border-style: dashed;*/
-}
-
-/* Estructura Comun a Todas las paginas */
-
-/* Barra de navegacion */
-
-header {
-  display: block;
-}
-
-nav ul {
-  list-style: none;
-  /*display: inline-block;*/
 }
 
 
-nav ul li a {
-  color: #f2f2f2;
-  font-weight: bold;
-  text-decoration: none;
 
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-  transition: 0.4s;
-}
-nav ul li a:hover {
-  color: #f29a2e;
-  box-shadow: 7px 5px 56px -14px #c3d900;
-}
-nav ul li a:active {
-  transform: scale(0.97);
-  box-shadow: 7px 5px 56px -10px #c3d900;
-}
 
-#logo {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 140px;
-  height: 80px;
-  border-radius: 30px;
-  /*background: #d5f365;*/
-  border: none;
-  cursor: pointer;
-  transition: 0.4s;
-}
-#logo:hover {
-  box-shadow: 7px 5px 56px -14px #f29a2e;
-}
-#logo:active {
-  transform: scale(0.97);
-  box-shadow: 7px 5px 56px -10px #f29a2e;
-}
 
-/* Contenedor principal */
-main {
-  height: 1000px;
-  width: 100%;
-  background-image: url(/assets/images/principal.jpg);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
 
-/* panel busqueda, video, botonera, logo */
-.panel {
-  color: white;
-  width: 30%;
-  height: 800px;
-  padding: 10px;
-  margin: 30px;
-  /*background-color: rgba(0, 0, 0, 0.514);*/
-  font-family: "Quicksand", sans-serif;
-  border-radius: 5px;
-  /*border: 3px solid white;*/
-}
 
-/* busqueda */
-.search input[type="text"] {
-  width: 75%;
-  height: 30px;
-  border-radius: 25px;
-  border: none;
-  box-shadow: 2px 2px 5px #73412f;
-
-}
-.search {
-  float: center;
-  margin-top: 30px;
-  margin-left: 10px;
-}
-.search button {
-  width: 15%;
-  background-color: #f29a2e;
-  color: #0d0d0d;
-  border-radius: 10px;
-  float: right;
-  padding: 5px 5px;
-  margin-right: 16px;
-  font-size: 12px;
-  border: none;
-  cursor: pointer;
-  margin-left: 5px;
+.btn:hover{
   text-shadow: 2px 2px 5px #73412f;
   -webkit-transition: 1s linear;
   transition: 0.5s linear;
-}
-
-
-.search button:hover{
-  -webkit-transform: scale(.5);
-  transform: scale(1);
-  border-radius: 70px;
-  box-shadow: #c3d900;
-  width: 10%;
 }
 
 /* video */
@@ -411,22 +311,13 @@ footer i:hover {
 .redes {
   margin-top: 10px;
 }
+.redes i:hover{
+  cursor: pointer;
+  transform: translateY(-20px);
+  transition: all 0.9s;
+}
 
-/* Para pagina de inicio */
-.box3 #inicio {
-  color: white;
-  width: 50%;
-  height: 350px;
-  background-color: rgba(0, 0, 0, 0.514);
-  font-family: "Quicksand", sans-serif;
-  padding: 20px;
-  margin: 30px;
-  border-radius: 5px;
-  /*border: 3px solid white;*/
-}
-.box3 #inicio p {
-  margin-bottom: 30px;
-}
+
 
 
 
@@ -476,19 +367,6 @@ footer i:hover {
 
 
 
-#retiro {
-  margin: 10px;
-}
-#envio {
-  margin: 10px;
-}
-.items {
-  margin-top: 10px;
-  list-style-type: none;
-}
-.bloque {
-  display: block;
-}
 
 /* Para pagina Sobre mi */
 .nosotros {
@@ -570,17 +448,14 @@ footer i:hover {
   color: white;
 }
 
+
+
+
+
+
 @media only screen and (max-width: 319px) {
-  .container-grid {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px auto 700px 150px;
-    grid-template-areas: "box1" "box3" "box2" "box4";
-  }
-  .box2 {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
+
+
   .box3 #inicio {
     width: 80%;
   }
@@ -588,10 +463,6 @@ footer i:hover {
     font-size: 12px;
   }
 
-  header {
-    display: inline-flex;
-    justify-content: space-around;
-  }
 
   nav ul li {
     display: inline-block;
@@ -646,29 +517,6 @@ footer i:hover {
     align-items: center;
   }
 
-  .nleftuno {
-    height: 200px;
-    width: 80%;
-    margin-top: 20px;
-    margin-left: 0px;
-  }
-  .nrightuno {
-    width: 80%;
-    padding: 0px;
-    margin-top: 10px;
-  }
-  .nleftdos {
-    width: 80%;
-    min-height: none;
-    padding-left: 0px;
-  }
-  .nrightdos {
-    height: 200px;
-    width: 80%;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
 
   .btn:link,
   .btn:visited {
@@ -687,21 +535,12 @@ footer i:hover {
   #logoPublicidad {
     height: 40px;
     width: 60px;
-    position: sticky;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 799px) {
-  .container-grid {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px auto 700px 150px;
-    grid-template-areas: "box1" "box3" "box2" "box4";
-  }
-  .box2 {
-    margin-right: 50px;
-    margin-left: 50px;
-  }
+
+
   .box3 #inicio {
     width: 80%;
   }
@@ -749,39 +588,9 @@ footer i:hover {
     justify-items: center;
     align-items: center;
   }
-
-  .nleftuno {
-    height: 200px;
-    width: 80%;
-    margin-top: 20px;
-    margin-left: 0px;
-  }
-  .nrightuno {
-    width: 80%;
-    padding: 0px;
-    margin-top: 10px;
-  }
-  .nleftdos {
-    width: 80%;
-    min-height: none;
-    padding-left: 0px;
-  }
-  .nrightdos {
-    height: 200px;
-    width: 80%;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1023px) {
-  .container-grid {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 150px 1200px 150px;
-    grid-template-areas: "box1 box1" "box2 box3" "box4 box4";
-  }
 
   .menu {
     grid-template-columns: 1fr;
@@ -837,50 +646,11 @@ footer i:hover {
     justify-content: stretch;
   }
 
-  .nleftuno {
-    height: 200px;
-    width: 80%;
-    margin-top: 20px;
-    margin-left: 0px;
-  }
-  .nrightuno {
-    width: 80%;
-    padding: 0px;
-    margin-top: 0px;
-  }
-  .nrightuno p {
-    margin-bottom: 0px;
-  }
-
-  .nleftdos {
-    width: 80%;
-    min-height: none;
-    padding-left: 0px;
-  }
-  .nrightdos {
-    height: 200px;
-    width: 80%;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
+  
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1560px) {
-  .nleftuno {
-    height: 300px;
-  }
-
-  .nleftdos p {
-    margin-bottom: 10px;
-  }
-  .nrightuno {
-    padding-bottom: 0px;
-  }
-
-  .nrightdos {
-    height: 250px;
-  }
+  
   .nosotros {
     height: 800px;
     font-size: 12px;
@@ -913,9 +683,7 @@ footer i:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .menu {
-    grid-template-columns: 1fr;
-  }
+
 
   .item {
     height: 200px;
