@@ -564,10 +564,7 @@ footer i:hover {
     width: 70px;
     right: 20px;
   }
-  .menu {
-    grid-template-columns: 1fr 1fr;
-  }
-
+ 
   .btn:link,
   .btn:visited {
     margin: 15px;
@@ -592,14 +589,7 @@ footer i:hover {
 
 @media only screen and (min-width: 800px) and (max-width: 1023px) {
 
-  .menu {
-    grid-template-columns: 1fr;
-  }
 
-  .item {
-    height: 200px;
-    width: 200px;
-  }
 
   #logoPublicidad {
     height: 70px;
@@ -617,73 +607,16 @@ footer i:hover {
     padding: 10px;
   }
 
-  .formularios {
-    height: auto;
-    width: 80%;
-    margin-bottom: auto;
-  }
-
-  .formularios form input[type="submit"] {
-    width: 100%;
-    margin-top: 6px;
-  }
-
-  .formularios textarea {
-    width: 100%;
-  }
-
-  .formularios form p {
-    align-self: center;
-  }
-
-  .nosotros {
-    height: auto;
-    font-size: 12px;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-    justify-content: stretch;
-  }
-
   
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1560px) {
-  
-  .nosotros {
-    height: 800px;
-    font-size: 12px;
-  }
 
-  .formularios {
-    height: 830px;
-    margin: 30px;
-  }
-  .formularios form input[type="submit"] {
-    width: 100%;
-  }
-
-  .formularios form input[type="text"],
-  .formularios form input[type="email"] {
-    width: 100%;
-  }
-
-  .formularios form .precio {
-    margin-left: 30px;
-  }
-
-  .formularios textarea {
-    width: 100%;
-  }
-
-  .formularios form p {
-    align-self: center;
-  }
-}
 
 @media only screen and (max-width: 600px) {
 
+  .menu {
+    grid-template-columns: 1fr;
+  }
 
   .item {
     height: 200px;
