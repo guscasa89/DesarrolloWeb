@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');;
+$phone: 320px;
+$phonexl: 600px;
+$tablet: 799px;
+$desktop: 1024px;
+$font: 'Karla', sans-serif;
+$naranja:#f29a2e;
+$marron: #73412f;
+$negro: #0d0d0d;
+$blanco: #f2f2f2;
+$transparencia: rgba(0, 0, 0, 0.514);
+$sombra: 0px 10px 10px 10px #0d0d0d;
+$imgForms: url(../assets/images/principal.jpg);
+$menu1: url(../assets/images/Menu1.jpeg);
+$menu2: url(../assets/images/Menu2.jpeg);
+$menu3: url(../assets/images/Menu3.jpeg);
+$menu4: url(../assets/images/Menu4.jpeg);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(
+    to bottom,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(92, 29, 29, 1) 43%,
+    rgba(242, 154, 46, 1) 100%
+  );
+}
+
+/*barra navegacion*/
+
+.bg-primary {
+  background-color: transparent !important;
+}
+
+.container{
+  width: 100%;
+  max-width: 100%;
+}
+
+.card{
+  background-color: transparent;
+  border: transparent;
+}
+.list-group-item{
+  background-color: transparent;
+  border: transparent;
+}
+
+
+.w-100{
+  border-radius: 40px;
+}
+
+
+nav ul {
+  list-style: none;
+  li a{
+    font-family: $font;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        color: naranja;
+        box-shadow: 7px 5px 56px -12px $naranja;
+    }
+    &:active{
+        transform: scale(0.97);
+        box-shadow: 7px 5px 56px -10px $naranja;
+    }
+  }
+}
+
+
+
+#logo {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 140px;
+  height: 80px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+  &:hover{
+    box-shadow: 7px 5px 56px -12px $naranja;
+    }   
+  &:active{
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px $naranja;
+  }
+}
+
+
+/* Contenedores principales */
+.box3 {
+  height: 100%;
+  width: 100%;
+  background-image: $imgForms;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  border-radius: 20px;
+}
+
+.box4 {
+  height: auto;
+}
+
+/*panel izquierdo*/
+
+/* video */
+#video {
+    height: 40vh;
+    width: 100%;
+    padding-top: 40px;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  /*botonera*/
+  .btn{
+    font-family: $font;
+    &:link,&:visited{
+        text-transform: uppercase;
+        text-decoration: none;
+        position: relative;
+        transition: all 0.2s;
+        margin: 10px;
+    }
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 100px;
+        text-shadow: 2px 2px 5px $marron;
+        -webkit-transition: 1s linear;
+        transition: 0.5s linear;
+        &::after {
+            transform: scale(1.5);
+            opacity: 0;
+          }
+      }
+    &:active {
+        transform: translateX(0);
+        box-shadow: 0 20px 50px;
+      }
+      &:after{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+      }
+  }
+
+
+
+.head_button_4 {
+  background-color: $naranja;
+  padding: 20px;
+  border-radius: 70px;
+  animation-name: todown;
+  animation-duration: 5s;
+  color: $negro;
+  text-align: center;
+  width: 100%;
+  &::after{
+    background-color: $naranja;
+  }
+}
+
+
+@keyframes todown {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  60% {
+    opacity: 0.6;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* logo flotante */
+#logoPublicidad {
+  height: 90px;
+  width: 130px;
+  padding-top: none;
+  border-top-style: dashed;
+  border-bottom-style: dotted;
+  border: 1px solid $blanco;
+  border-radius: 20px;
+  background-color: $blanco;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  animation-name: rebotar;
+  animation-duration: 10s;
+  background-position: center;
+  background-size: cover;
+
+}
+
+@keyframes rebotar{
+  0%{
+      opacity: 0;
+  }
+  1%{
+      transform: translateX(150px);
+      box-shadow: $sombra;
+  }
+  
+  10%{
+      opacity: 1;
+      transform: translateX(150px);
+  }
+  11%{
+    box-shadow: $sombra;
+  }
+  20%{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+  21%{
+      box-shadow: none;
+  }
+  30%{
+      opacity: 1;
+      transform: translateY(150px);
+  }
+  31%{
+    box-shadow: $sombra;
+  }
+  40%{
+      opacity: 1;
+      transform: translateY(0px);
+      box-shadow: none;
+  }
+  50%{
+      opacity: 1;
+      transform: translateX(-150px);
+      box-shadow: $sombra;
+  }
+  60%{
+      opacity: 1;
+      transform: translateX(0px);
+      box-shadow: none;
+  }
+  70%{
+      opacity: 1;
+      transform: translateY(-150px);
+      box-shadow: $sombra;
+  }
+  80%{
+      opacity: 1;
+      transform: translateY(-50px);
+      box-shadow: none;
+  }
+  90%{
+      opacity: 1;
+      transform: translateY(-130px);
+      box-shadow: none;
+      transform: rotate(-280deg);
+  }
+  
+  100%{
+      transform: rotate(-560deg);
+      transform: translate(10px, 150px);
+      box-shadow: $sombra;
+  }
+}
+
+
+/*
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*/
+
+/* pie de pagina*/
+footer {
+  color: $negro;
+  text-align: center;
+  padding: 20px;
+  p {
+    font-size: 15px;
+    font-family: $font;
+    margin-bottom: 10px;
+  }
+  i {
+    font-size: 40px;
+    letter-spacing: 20px;
+    &:hover{
+        color: $marron;
+    }
+  }
+  a {
+    color: $negro;
+  }
+}
+
+.redes {
+  margin-top: 10px;
+  i{
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-20px);
+        transition: all 0.9s;
+    }
+    }
+}
+
+/* Para pagina de pedidos y contacto */
+.formularios {
+  width: 60%;
+  height: auto;
+  background-color: $transparencia;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $naranja;
+    input[type="text"],input[type="number"]
+    {
+        width: 100%;
+        display: inline-block;
+    }
+    input[type="submit"]{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    p {
+        text-align: right;
+      }
+  }
+  textarea {
+  font-family: $font;
+  width: 100%;
+  height: 100px;
+  border: 1px solid $blanco;
+  border-radius: 3px;
+  background-color: $blanco;
+  margin: 8px 0;
+  /*resize: vertical | horizontal | none | both*/
+  resize: none;
+  display: block;
+}
+  
+}
+
+
+/* Para pagina Sobre mi */
+.nosotros {
+  color: $blanco;
+  width: 80%;
+  height: 90%;
+  background-color:$transparencia;
+  margin-top: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  p{
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+  h5{
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+}
+
+.img-fluid{
+  border-radius: 20px;
+}
+.centro{
+  align-self: center;
+}
+
+
+/* Para pagina de Menu */
+.menu {
+  color: $blanco;
+  /* width: 50%;
+  height: 800px;*/
+  background-color: $transparencia;
+  font-family: $font;
+  padding: 20px;
+  margin: 50px;
+  border-radius: 20px;
+
+  width: auto;
+  height: auto;
+  /* min altura viewport heigth*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+}
+.item {
+  height: 300px;
+  width: 300px;
+  border: 2px solid $negro;
+  margin: 20px;
+  box-shadow: 2px 2px 5px $marron;
+  border-radius: 5px;
+  &:hover {
+    transform: scale(1.15);
+    transition: all 0.9s;
+  }
+}
+
+.item1 {
+  background-image: $menu1;
+  background-size: cover;
+  background-position: center;
+}
+.item2 {
+  background-image: $menu2;
+  background-size: cover;
+  background-position: center;
+}
+.item3 {
+  background-image: $menu3;
+  background-size: cover;
+  background-position: center;
+}
+.item4 {
+  background-image: $menu4;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+@media only screen and (max-width: $phone) {
+
+    .box3 #inicio {
+        width: 80%;
+        p {
+            font-size: 12px;
+          }
+      }
+    nav   {
+        ul{
+            li{
+                display: inline-block;
+                font-size: 14px;
+                font-family: $font;
+                width: auto;
+                margin: 10px;
+                margin-top: 30px;
+            }
+        }
+        
+      }
+      #logo {
+        width: 160px;
+        height: 90px;
+      }
+    
+      .btn{
+        &:link,
+        &:visited {
+            margin: 10px;
+        }
+      }
+      
+      .head_button_4 {
+        padding: 10px;
+      }
+    
+      .formularios {
+        width: 100%;
+        height: auto;
+        form {
+            p {
+                font-size: 12px;
+            }
+            h1 {
+                font-size: 14px;
+              }
+            .precio {
+                width: 50px;
+                margin-left: 20px;
+            }
+            input[type="submit"] {
+                margin-top: 6px;
+                margin: 0px;
+              }
+          }
+      }
+      
+      .nosotros {
+        height: auto;
+        font-size: 12px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+      }
+    
+    
+      
+      .head_button_4 {
+        padding: 5px;
+      }
+    
+      footer {
+        p{
+            font-size: 12px;
+            font-family: $font;
+            margin-bottom: 10px;
+        }
+        
+      }
+    
+      #logoPublicidad {
+        height: 40px;
+        width: 60px;
+      }
+}
+
+
+
+@media only screen and (min-width: $phone) and (max-width: $tablet) {
+
+
+  .box3 {
+    #inicio {
+        width: 80%;
+      }
+  }
+  
+  header {
+    display: inline-flex;
+    justify-content: space-around;
+  }
+
+  nav {
+    ul {
+        li {
+            display: inline-block;
+            width: auto;
+            margin: 10px;
+            margin-top: 30px;
+          }
+    }
+  }
+  
+  #logo {
+    width: 140px;
+    height: 70px;
+  }
+  #logoPublicidad {
+    height: 50px;
+    width: 70px;
+    right: 20px;
+  }
+ 
+  .btn{
+    &:link,
+    &:visited {
+      margin: 15px;
+    }
+  }
+  .head_button_4 {
+    padding: 10px;
+  }
+
+  .formularios {
+    width: 80%;
+    height: auto;
+  }
+  .nosotros {
+    height: auto;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: $tablet) and (max-width: $desktop) {
+
+
+
+  #logoPublicidad {
+    height: 70px;
+    width: 100px;
+  }
+
+  .search {
+    input[type="text"] {
+        width: 70%;
+  }
+}
+
+  #video {
+    height: 80vh;
+  }
+  .head_button_4 {
+    padding: 10px;
+  }
+  
+  
+}
+
+
+
+@media only screen and (max-width: $phonexl) {
+
+  .menu {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    height: 200px;
+    width: 200px;
+  }
+}
