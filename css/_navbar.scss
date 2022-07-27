@@ -1,0 +1,64 @@
+/*barra navegacion*/
+
+.bg-primary {
+    background-color: transparent !important;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .card{
+    background-color: transparent;
+    border: transparent;
+  }
+  .list-group-item{
+    background-color: transparent;
+    border: transparent;
+  }
+  
+  
+  .w-100{
+    border-radius: 40px;
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    li a{
+      font-family: $font;
+      font-weight: bold;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      &:hover{
+          color: naranja;
+          box-shadow: 7px 5px 56px -12px $naranja;
+      }
+      &:active{
+          transform: scale(0.97);
+          box-shadow: 7px 5px 56px -10px $naranja;
+      }
+    }
+  }
+  
+  
+  
+  #logo {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 140px;
+    height: 80px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+      box-shadow: 7px 5px 56px -12px $naranja;
+      }   
+    &:active{
+      transform: scale(0.97);
+      box-shadow: 7px 5px 56px -10px $naranja;
+    }
+  }

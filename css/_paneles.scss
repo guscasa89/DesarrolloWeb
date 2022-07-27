@@ -1,0 +1,222 @@
+/* Contenedores principales */
+.box3 {
+    height: 100%;
+    width: 100%;
+    background-image: $imgForms;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    border-radius: 20px;
+  }
+  
+  .box4 {
+    height: auto;
+  }
+  
+  /*panel izquierdo*/
+  
+  /* video */
+  #video {
+      height: 40vh;
+      width: 100%;
+      padding-top: 40px;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+  
+    /*botonera*/
+    .btn{
+      font-family: $font;
+      &:link,&:visited{
+          text-transform: uppercase;
+          text-decoration: none;
+          position: relative;
+          transition: all 0.2s;
+          margin: 10px;
+      }
+      &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 100px;
+          text-shadow: 2px 2px 5px $marron;
+          -webkit-transition: 1s linear;
+          transition: 0.5s linear;
+          &::after {
+              transform: scale(1.5);
+              opacity: 0;
+            }
+        }
+      &:active {
+          transform: translateX(0);
+          box-shadow: 0 20px 50px;
+        }
+        &:after{
+          content: "";
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+          border-radius: 100px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: all 0.4s;
+        }
+    }
+  
+  
+  
+  .head_button_4 {
+    background-color: $naranja;
+    padding: 20px;
+    border-radius: 70px;
+    animation-name: todown;
+    animation-duration: 5s;
+    color: $negro;
+    text-align: center;
+    width: 100%;
+    &::after{
+      background-color: $naranja;
+    }
+  }
+  
+  
+  @keyframes todown {
+    0% {
+      opacity: 0;
+      transform: translateY(-150px);
+    }
+    60% {
+      opacity: 0.6;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* logo flotante */
+#logoPublicidad {
+  height: 90px;
+  width: 130px;
+  padding-top: none;
+  border-top-style: dashed;
+  border-bottom-style: dotted;
+  border: 1px solid $blanco;
+  border-radius: 20px;
+  background-color: $blanco;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  animation-name: rebotar;
+  animation-duration: 10s;
+  background-position: center;
+  background-size: cover;
+
+}
+
+@keyframes rebotar{
+  0%{
+      opacity: 0;
+  }
+  1%{
+      transform: translateX(150px);
+      box-shadow: $sombra;
+  }
+  
+  10%{
+      opacity: 1;
+      transform: translateX(150px);
+  }
+  11%{
+    box-shadow: $sombra;
+  }
+  20%{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+  21%{
+      box-shadow: none;
+  }
+  30%{
+      opacity: 1;
+      transform: translateY(150px);
+  }
+  31%{
+    box-shadow: $sombra;
+  }
+  40%{
+      opacity: 1;
+      transform: translateY(0px);
+      box-shadow: none;
+  }
+  50%{
+      opacity: 1;
+      transform: translateX(-150px);
+      box-shadow: $sombra;
+  }
+  60%{
+      opacity: 1;
+      transform: translateX(0px);
+      box-shadow: none;
+  }
+  70%{
+      opacity: 1;
+      transform: translateY(-150px);
+      box-shadow: $sombra;
+  }
+  80%{
+      opacity: 1;
+      transform: translateY(-50px);
+      box-shadow: none;
+  }
+  90%{
+      opacity: 1;
+      transform: translateY(-130px);
+      box-shadow: none;
+      transform: rotate(-280deg);
+  }
+  
+  100%{
+      transform: rotate(-560deg);
+      transform: translate(10px, 150px);
+      box-shadow: $sombra;
+  }
+}
+
+/* pie de pagina*/
+footer {
+  color: $negro;
+  text-align: center;
+  padding: 20px;
+  p {
+    font-size: 15px;
+    font-family: $font;
+    margin-bottom: 10px;
+  }
+  i {
+    font-size: 40px;
+    letter-spacing: 20px;
+    &:hover{
+        color: $marron;
+    }
+  }
+  a {
+    color: $negro;
+  }
+}
+
+.redes {
+  margin-top: 10px;
+  i{
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-20px);
+        transition: all 0.9s;
+    }
+    }
+}

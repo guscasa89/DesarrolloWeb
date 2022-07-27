@@ -1,0 +1,27 @@
+/* Para pagina Sobre mi */
+.nosotros {
+    color: $blanco;
+    width: 80%;
+    height: 90%;
+    background-color:$transparencia;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    p{
+      font-family: $font;
+      text-shadow: black 0.1em 0.1em 0.2em;
+    }
+    h5{
+      font-family: $font;
+      text-shadow: black 0.1em 0.1em 0.2em;
+    }
+  }
+  
+  .img-fluid{
+    border-radius: 20px;
+  }
+  .centro{
+    align-self: center;
+  }
+  
