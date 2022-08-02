@@ -28,27 +28,24 @@
       transition: all 0.9s;
     }
   }
+
+  $imagenes: (
+    /*Declaramos nuestro mapa*/
+    menu1: url(../assets/images/Menu1.jpeg),
+    menu2: url(../assets/images/Menu2.jpeg),
+    menu3: url(../assets/images/Menu3.jpeg),
+    menu4: url(../assets/images/Menu4.jpeg)
+    );
+
+ @each $menu, $url in $imagenes {
+         .item-#{$menu} {
+          background-image: $url;
+          background-size: cover;
+          background-position: center;
+       }
+    }
   
-  .item1 {
-    background-image: $menu1;
-    background-size: cover;
-    background-position: center;
-  }
-  .item2 {
-    background-image: $menu2;
-    background-size: cover;
-    background-position: center;
-  }
-  .item3 {
-    background-image: $menu3;
-    background-size: cover;
-    background-position: center;
-  }
-  .item4 {
-    background-image: $menu4;
-    background-size: cover;
-    background-position: center;
-  }
+
   
   
   

@@ -10,6 +10,20 @@ body {
 }
 
 /*barra navegacion*/
+.itemnav, #logo, nav ul li a {
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.itemnav:hover, #logo:hover, nav ul li a:hover {
+  color: naranja;
+  box-shadow: 7px 5px 56px -12px #f29a2e;
+}
+.itemnav:active, #logo:active, nav ul li a:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #f29a2e;
+}
+
 .bg-primary {
   background-color: transparent !important;
 }
@@ -39,17 +53,6 @@ nav ul {
 nav ul li a {
   font-family: "Karla", sans-serif;
   font-weight: bold;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-}
-nav ul li a:hover {
-  color: naranja;
-  box-shadow: 7px 5px 56px -12px #f29a2e;
-}
-nav ul li a:active {
-  transform: scale(0.97);
-  box-shadow: 7px 5px 56px -10px #f29a2e;
 }
 
 #logo {
@@ -57,26 +60,16 @@ nav ul li a:active {
   margin-right: 10px;
   width: 140px;
   height: 80px;
-  border-radius: 30px;
-  border: none;
-  cursor: pointer;
   transition: 0.4s;
-}
-#logo:hover {
-  box-shadow: 7px 5px 56px -12px #f29a2e;
-}
-#logo:active {
-  transform: scale(0.97);
-  box-shadow: 7px 5px 56px -10px #f29a2e;
 }
 
 /* Contenedores principales */
 .box3 {
   height: 100%;
   width: 100%;
-  background-image: url(../assets/images/principal.jpg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  background-image: url(../assets/images/principal.jpg);
   display: flex;
   justify-content: center;
   margin: 0px;
@@ -92,9 +85,9 @@ nav ul li a:active {
 #video {
   height: 40vh;
   width: 100%;
-  padding-top: 40px;
   background-position: 50% 50%;
   background-size: cover;
+  padding-top: 40px;
 }
 
 /*botonera*/
@@ -184,6 +177,8 @@ nav ul li a:active {
 #logoPublicidad {
   height: 90px;
   width: 130px;
+  background-position: center;
+  background-size: cover;
   padding-top: none;
   border-top-style: dashed;
   border-bottom-style: dotted;
@@ -199,8 +194,6 @@ nav ul li a:active {
           animation-name: rebotar;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  background-position: center;
-  background-size: cover;
 }
 
 @-webkit-keyframes rebotar {
@@ -436,25 +429,25 @@ footer a {
   transition: all 0.9s;
 }
 
-.item1 {
+.item-menu1 {
   background-image: url(../assets/images/Menu1.jpeg);
   background-size: cover;
   background-position: center;
 }
 
-.item2 {
+.item-menu2 {
   background-image: url(../assets/images/Menu2.jpeg);
   background-size: cover;
   background-position: center;
 }
 
-.item3 {
+.item-menu3 {
   background-image: url(../assets/images/Menu3.jpeg);
   background-size: cover;
   background-position: center;
 }
 
-.item4 {
+.item-menu4 {
   background-image: url(../assets/images/Menu4.jpeg);
   background-size: cover;
   background-position: center;

@@ -1,10 +1,17 @@
+@mixin sizes($height, $width, $bposition, $bsize) {
+  height: $height;
+  width: $width;
+  background-position: $bposition;
+  background-size: $bsize;
+  
+}
+
+
+
 /* Contenedores principales */
 .box3 {
-    height: 100%;
-    width: 100%;
+    @include sizes(100%, 100%, center, cover); 
     background-image: $imgForms;
-    background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     margin: 0px;
@@ -19,11 +26,8 @@
   
   /* video */
   #video {
-      height: 40vh;
-      width: 100%;
+      @include sizes(40vh, 100%, 50% 50%, cover); 
       padding-top: 40px;
-      background-position: 50% 50%;
-      background-size: cover;
     }
   
     /*botonera*/
@@ -99,8 +103,7 @@
 
   /* logo flotante */
 #logoPublicidad {
-  height: 90px;
-  width: 130px;
+  @include sizes(90px, 130px, center, cover); 
   padding-top: none;
   border-top-style: dashed;
   border-bottom-style: dotted;
@@ -114,8 +117,6 @@
   padding-right: 5px;
   animation-name: rebotar;
   animation-duration: 10s;
-  background-position: center;
-  background-size: cover;
 
 }
 
