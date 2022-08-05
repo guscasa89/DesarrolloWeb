@@ -15,6 +15,11 @@
 
 }
 
+.transparencia {
+  background-color: transparent;
+  border: transparent;
+}
+
 
 .bg-primary {
     background-color: transparent !important;
@@ -24,14 +29,15 @@
     width: 100%;
     max-width: 100%;
   }
+
+
   
   .card{
-    background-color: transparent;
-    border: transparent;
+    @extend .transparencia;
   }
   .list-group-item{
-    background-color: transparent;
-    border: transparent;
+    @extend .transparencia;
+    padding-right: 45px;
   }
   
   
