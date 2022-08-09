@@ -1,0 +1,191 @@
+
+
+@media only screen and (max-width: $phone) {
+
+    .box3 #inicio {
+        width: 80%;
+        p {
+            font-size: 12px;
+          }
+      }
+    nav   {
+        ul{
+            li{
+                display: inline-block;
+                font-size: 14px;
+                font-family: $font;
+                width: auto;
+                margin: 10px;
+                margin-top: 30px;
+            }
+        }
+        
+      }
+      #logo {
+        width: 160px;
+        height: 90px;
+      }
+    
+      .btn{
+        &:link,
+        &:visited {
+            margin: 10px;
+        }
+      }
+      
+      .head_button_4 {
+        padding: 10px;
+      }
+    
+      .formularios {
+        width: 100%;
+        height: auto;
+        form {
+            p {
+                font-family: $font;
+                font-size: 12px;
+            }
+            h1 {
+                font-family: $font;
+                font-size: 14px;
+              }
+            .precio {
+                width: 50px;
+                margin-left: 20px;
+            }
+            input[type="submit"] {
+                margin-top: 6px;
+                margin: 0px;
+              }
+          }
+      }
+      
+      .nosotros {
+        height: auto;
+        font-size: 12px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+      }
+    
+    
+      
+      .head_button_4 {
+        padding: 5px;
+      }
+    
+      footer {
+        p{
+            font-size: 12px;
+            font-family: $font;
+            margin-bottom: 10px;
+        }
+        
+      }
+    
+      #logoPublicidad {
+        height: 40px;
+        width: 60px;
+      }
+}
+
+
+
+@media only screen and (min-width: $phone) and (max-width: $tablet) {
+
+
+  .box3 {
+    #inicio {
+        width: 80%;
+      }
+  }
+  
+  header {
+    display: inline-flex;
+    justify-content: space-around;
+  }
+
+  nav {
+    ul {
+        li {
+            display: inline-block;
+            width: auto;
+            margin: 10px;
+            margin-top: 30px;
+          }
+    }
+  }
+  
+  #logo {
+    width: 140px;
+    height: 70px;
+  }
+  #logoPublicidad {
+    height: 50px;
+    width: 70px;
+    right: 20px;
+  }
+ 
+  .btn{
+    &:link,
+    &:visited {
+      margin: 15px;
+    }
+  }
+  .head_button_4 {
+    padding: 10px;
+  }
+
+  .formularios {
+    width: 80%;
+    height: auto;
+  }
+  .nosotros {
+    height: auto;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: $tablet) and (max-width: $desktop) {
+
+
+
+  #logoPublicidad {
+    height: 70px;
+    width: 100px;
+  }
+
+  .search {
+    input[type="text"] {
+        width: 70%;
+  }
+}
+
+  #video {
+    height: 80vh;
+  }
+  .head_button_4 {
+    padding: 10px;
+  }
+  
+  
+}
+
+
+
+@media only screen and (max-width: $phonexl) {
+
+  .menu {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    height: 200px;
+    width: 200px;
+  }
+}
