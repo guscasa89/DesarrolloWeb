@@ -1,0 +1,20 @@
+Se introdujo: keywords
+<meta name="keywords" content="COCINA, COMIDA, MENU, SALUDABLE, VIANDAS, GOURMET, PEDIDOS, CONGELADOS, TARTAS, SANDWICHES">
+  
+Se introdujo: descripcion:
+<meta name="description" content="Ofrecemos tartas, sandiwches, sopas y viandas congeladas, practicas para soluciones para el almuerzo o la cena.">
+
+Se modificaron los titulos a las paginas:
+Inicio --- > "Ramallo Cocina"
+Pedidos ---> "Pedidos"
+Menu ------> "Opciones tentadoras"
+Contacto --> "Contáctanos"
+Nosotros --> "Sobre mi"
+
+Encabezados:
+index.html
+h1 ----> para el carousel
+nosotros.hmtl
+h2 ----> para titulos
+
+No manejo muchos titulos y encabezados en mi pagina.
