@@ -69,7 +69,15 @@
         align-items: center;
       }
     
+      
+      .menu {
+        grid-template-columns: 1fr;
+      }
     
+      .item {
+        height: 200px;
+        width: 200px;
+      }
       
       .head_button_4 {
         padding: 5px;
@@ -178,14 +186,14 @@
 
 
 
-@media only screen and (max-width: $phonexl) {
+@media only screen and (min-width: $phone)  and (max-width: $phonexl) {
 
   .menu {
     grid-template-columns: 1fr;
   }
 
   .item {
-    height: 200px;
-    width: 200px;
+    height: 350px;
+    width: 350px;
   }
 }
